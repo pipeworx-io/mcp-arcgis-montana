@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-montana",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Montana State GIS — Montana open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-7331c161c47b53794b0c891c3dbcc4d126ef204bf2271924b17f6a9980ad1320",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-9adc97d0832b7af4c06c879643117cf5cb433968a47da0c6e99f4ab8707f169a",
+    "sourceCommit": "454041882179fae560c06e770b6b7a2f33970015"
   }
 }
