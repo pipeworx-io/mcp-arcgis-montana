@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-montana",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Montana State GIS — Montana open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-montana": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-montana"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-montana.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-montana",
   "pipeworx": {
-    "sourceHash": "v1-251c150133b4990e2cd0548287429f98c5239229d4a3c01c40a7937ebd1331da",
-    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
+    "mode": "gateway",
+    "slug": "arcgis-montana",
+    "gatewaySlug": "arcgis-montana",
+    "sourceHash": "v1-6ce48e0372eef02067de74f9feaaea872680fb1d7243f0203afef7e3cabea7d4",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
